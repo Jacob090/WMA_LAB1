@@ -8,7 +8,7 @@ LAB1 – detekcja i śledzenie czerwonego obiektu w materiale wideo.
 pip install -r requirements.txt
 ```
 
-Uruchom program, podając ścieżkę do pliku wideo:
+Uruchomienie programu:
 
 ```bash
 python lab1_object_detection.py --video F1.MOV
