@@ -92,11 +92,9 @@ def draw_deviation_bars(
     h, w = frame.shape[:2]
     x_center = w // 2
 
-    # środek kadru
     cv2.line(frame, (x_center, 0), (x_center, h), (255, 255, 255), 1)
 
     max_bar_len = int(w * max_bar_fraction)
-    # Normalizacja odchylenia do zakresu [-1, 1]
     norm = np.clip(deviation_px / max(w / 2, 1), -1.0, 1.0)
     bar_len = int(abs(norm) * max_bar_len)
 
